@@ -13,6 +13,14 @@
   max-width: 100%;
 }
 
+// .content .section {
+//   height: 80vh;
+// }
+
+// .content .section div {
+//   transform: translate(0, 50%);
+// }
+
 h1,
 h2,
 h3,
@@ -122,7 +130,7 @@ body {
     border-right: 1px solid $gray-200;
   }
 
-  @supports ((position:-webkit-sticky) or (position:sticky)) {
+  @supports ((position: -webkit-sticky) or (position: sticky)) {
     .docs-sidebar {
       position: -webkit-sticky;
       position: sticky;
@@ -165,7 +173,7 @@ body {
   order: 2;
 }
 
-@supports ((position:-webkit-sticky) or (position:sticky)) {
+@supports ((position: -webkit-sticky) or (position: sticky)) {
   .docs-toc {
     position: -webkit-sticky;
     position: sticky;
