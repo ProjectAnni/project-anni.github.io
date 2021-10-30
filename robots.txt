@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anni.rs/sitemap.xml
