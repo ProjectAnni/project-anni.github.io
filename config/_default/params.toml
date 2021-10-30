@@ -10,10 +10,12 @@ description = ""
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["doks.png"]
-ogLocale = "en_US"
-domainTLD = "doks.netlify.app"
-titleHome = "Doks Theme"
+images = [
+  "https://opengraph.githubassets.com/76c02813fe8f5882e0c75c40911134150b544a549b508490524f881bfe419cf1/project-anni/anni",
+]
+ogLocale = "zh_CN"
+domainTLD = "anni.rs"
+titleHome = "Project Anni"
 
 ## Twitter Cards
 twitterSite = ""
@@ -28,10 +30,10 @@ schemaAuthorTwitter = ""
 schemaAuthorLinkedIn = ""
 schemaAuthorGitHub = "https://github.com/Yesterday17"
 schemaLocale = "zh-CN"
-schemaLogo = "logo-doks.png"
+schemaLogo = "logo-anni.png"
 schemaLogoWidth = 512
 schemaLogoHeight = 512
-schemaImage = "doks.png"
+schemaImage = "https://opengraph.githubassets.com/76c02813fe8f5882e0c75c40911134150b544a549b508490524f881bfe419cf1/project-anni/anni"
 schemaImageWidth = 1280
 schemaImageHeight = 640
 schemaTwitter = ""
