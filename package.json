@@ -1,11 +1,11 @@
 {
-  "name": "@hyas/doks",
-  "description": "Doks theme",
+  "name": "project-anni.github.io",
+  "description": "Project Anni Homepatge",
   "version": "0.3.5",
   "browserslist": [
     "defaults"
   ],
-  "repository": "https://github.com/h-enk/doks",
+  "repository": "https://github.com/project-anni/project-anni.github.io",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
