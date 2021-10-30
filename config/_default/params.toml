@@ -66,23 +66,21 @@ alertDismissable = true
 alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\">Check out Doks v0.2</a>"
 
 # Edit Page
-# repoHost [Github | Gitea | GitLab] is used for building the edit link based on git hoster
 repoHost = "GitHub"
-#repoHost = "Gitea"
-docsRepo = "https://github.com/h-enk/doks"
+docsRepo = "https://github.com/project-anni/project-anni.github.io"
 docsRepoBranch = "master"
 editPage = false
 
 [options]
-  lazySizes = true
-  clipBoard = true
-  instantPage = true
-  flexSearch = true
-  darkMode = true
-  bootStrapJs = true
-  breadCrumb = false
-  highLight = true
-  kaTex = false
-  collapsibleSidebar = true
-  multilingualMode = false
-  docsVersioning = false
+lazySizes = true
+clipBoard = true
+instantPage = true
+flexSearch = true
+darkMode = true
+bootStrapJs = true
+breadCrumb = false
+highLight = true
+kaTex = false
+collapsibleSidebar = true
+multilingualMode = true
+docsVersioning = false

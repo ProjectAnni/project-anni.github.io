@@ -1,17 +1,16 @@
-baseurl = "https://doks.netlify.app/"
+baseurl = "https://anni.rs"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
 enableEmoji = true
 enableGitInfo = false
 enableRobotsTXT = true
-languageCode = "en-US"
+languageCode = "zh-CN"
 paginate = 7
 rssLimit = 10
 
 # Multilingual
-defaultContentLanguage = "en"
-disableLanguages = ["de", "nl"]
+defaultContentLanguage = "zh"
 # defaultContentLanguageInSubdir = true
 
 # add redirects/headers
@@ -45,45 +44,48 @@ baseName = "sitemap"
 isHTML = false
 isPlainText = true
 noUgly = true
-rel  = "sitemap"
+rel = "sitemap"
 
 [caches]
-  [caches.getjson]
-    dir = ":cacheDir/:project"
-    maxAge = "10s"
+[caches.getjson]
+dir = ":cacheDir/:project"
+maxAge = "10s"
 
 [sitemap]
-  changefreq = "weekly"
-  filename = "sitemap.xml"
-  priority = 0.5
+changefreq = "weekly"
+filename = "sitemap.xml"
+priority = 0.5
 
 [taxonomies]
-  contributor = "contributors"
+contributor = "contributors"
 
 [permalinks]
-  blog = "/blog/:title/"
+blog = "/blog/:title/"
 # docs = "/docs/1.0/:sections[1:]/:title/"
 
 [minify.tdewolff.html]
-  keepWhitespace = false
+keepWhitespace = false
 
+############################# Modules #############################
 [module]
-  [module.hugoVersion]
-    extended = true
-    min = "0.80.0"
-    max = ""
-  [[module.mounts]]
-    source = "assets"
-    target = "assets"
-  [[module.mounts]]
-    source = "static"
-    target = "static"
-  [[module.mounts]]
-    source = "node_modules/flexsearch"
-    target = "assets/js/vendor/flexsearch"
-  [[module.mounts]]
-    source = "node_modules/katex"
-    target = "assets/js/vendor/katex"
-  [[module.mounts]]
-    source = "node_modules/mermaid"
-    target = "assets/js/vendor/mermaid"
+hugoVersion = { extended = true, min = "0.80.0", max = "" }
+
+[[module.mounts]]
+source = "assets"
+target = "assets"
+
+[[module.mounts]]
+source = "static"
+target = "static"
+
+[[module.mounts]]
+source = "node_modules/flexsearch"
+target = "assets/js/vendor/flexsearch"
+
+[[module.mounts]]
+source = "node_modules/katex"
+target = "assets/js/vendor/katex"
+
+[[module.mounts]]
+source = "node_modules/mermaid"
+target = "assets/js/vendor/mermaid"
