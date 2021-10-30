@@ -5,17 +5,10 @@ weight = 10
 identifier = "prologue"
 url = "/docs/prologue/"
 
-[[docs]]
-name = "帮助"
-weight = 60
-identifier = "help"
-url = "/docs/help/"
-
 # 菜单
 [[main]]
 name = "文档"
-url = "/docs/prologue/introduction/"
-# url = "/docs/1.0/prologue/introduction/"
+url = "/docs/prologue/quick-start/"
 weight = 10
 
 [[main]]
