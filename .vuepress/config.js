@@ -23,19 +23,19 @@ module.exports = {
             link: "https://github.com/ProjectAnni/anni",
           },
           {
-            text: "Annil - 音频分发后端",
+            text: "Annil - 音频分发服务端",
             link: "https://github.com/ProjectAnni/anni/annil",
           },
           {
-            text: "Anniv - 附加信息后端",
+            text: "Anniv - 附加信息服务端",
             link: "https://github.com/ProjectAnni/anniv-go",
           },
           {
-            text: "Anniw - 前端",
+            text: "Anniw - 网页应用",
             link: "https://github.com/ProjectAnni/anniw",
           },
           {
-            text: "Annix - 客户端",
+            text: "Annix - 客户端应用",
             link: "https://github.com/ProjectAnni/annix",
           },
         ],

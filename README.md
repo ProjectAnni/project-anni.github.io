@@ -12,22 +12,20 @@ features:
   - title: 元数据仓库
     details: 以统一的方式管理元数据，并提供了向音频文件写入仓库内元数据的功能。
   - title: 音频仓库 Annil
-    details: Annil 提供了音频、封面和歌词文件的分发能力。
+    details: Annil 提供了音频和封面资源的分发能力。
   - title: 音频后端
     details: Annil 支持多种音频后端提供的音频/封面文件。目前支持本地文件系统和 Google Drive。
   - title: Anniv
-    details: Anniv 提供歌单、播放记录、Token 同步等功能，与元数据分离。
+    details: Anniv 提供歌单、播放记录、Token 同步、歌词等功能，与元数据分离。
   - title: Anniw
     details: Anniw 提供了简单可用的前端应用。
   - title: Annix
     details: Annix 提供了功能丰富的客户端应用。
 
 footerHtml: true
-footer: "<pre>
-Project Anni 的出现是为了填补「不满足我们需求」的空白，而不是为了纯泛用性而生。
+footer: "Project Anni 的出现是为了填补「不满足我们需求」的空白，而不是为了纯泛用性而生。
 <br>
-和每一个定制项目一样，Anni 并不一定适合每一个人，我们也不奢求所有用户和我们的需求都完全一致。
-</pre>"
+和每一个定制项目一样，Anni 并不一定适合每一个人，我们也不奢求所有用户和我们的需求都完全一致。"
 ---
 
 ### 更简单的整轨切分
