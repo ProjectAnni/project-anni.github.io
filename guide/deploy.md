@@ -107,41 +107,11 @@ annil_token:
 
 配置文件修改后需要重启 Docker 容器。
 
-## 整理音频资源
+## 开始使用
 
-### 安装 anni-cli
+部署完 annil 与 anniv 之后，就可以打开客户端并开始使用了。Anni 当前有两个客户端：
 
-从 [GitHub Actions](https://github.com/ProjectAnni/anni/actions/workflows/build.yaml) 中下载操作系统对应的 anni 二进制，解压 anni 可执行文件并加入 PATH 变量。
+- 基于网页的 anniw 客户端，直接使用浏览器访问 anniv 的 URL 即可开始使用
+- 基于 Flutter 的 annix 客户端，可在 [Release](https://github.com/ProjectAnni/annix/releases/tag/canary) 中下载对应版本，并填写 anniv URL 开始使用
 
-### 创建 Anni Workspace
-
-```bash
-# 切换到存放 Workspace 的目录
-mkdir AnniWorkspace
-cd AnniWorkspace
-anni ws init .
-cd .anni
-# 克隆自己的元数据仓库到 .anni/repo 下
-git clone https://github.com/ProjectAnni/repo.git repo
-```
-
-创建 `.anni/config.toml`:
-
-```toml
-[workspace]
-publish-to = "default"
-
-[library.default]
-path = "/path/to/publish/path" # 填写音频文件发布的目录
-layers = 2
-```
-
-### 使用 anni-workspace-gui 整理音频资源
-
-TODO
-
-### 发布元数据及音频资源
-
-在使用 Workspace 中发布专辑后，将 `$WORKSPACE_DIR/.anni/repo` Git 仓库中的变更提交并推送到远端仓库，并将音频文件发布目录中的文件拷贝到 annil 音频后端目录。
-
-完成后，重启 anniv 及 annil 服务。
+虽然 Anni 已经可以正常工作了，但当前音频仓库中并没有任何专辑。要了解如何向 Anni 中添加专辑，请阅读下一章。

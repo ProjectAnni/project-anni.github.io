@@ -48,6 +48,7 @@ module.exports = {
         children: [
           'intro',
           'deploy',
+          'working',
         ],
       }
     ],
