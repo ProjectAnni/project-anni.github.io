@@ -12,7 +12,7 @@ module.exports = {
     repo: "https://github.com/ProjectAnni",
     navbar: [
       {
-        text: "文档",
+        text: "开发文档",
         link: "https://book.anni.rs",
       },
       {
@@ -40,6 +40,16 @@ module.exports = {
           },
         ],
       },
+    ],
+    sidebar: [
+      {
+        title: "教程",
+        path: "/guide",
+        children: [
+          'intro',
+          'deploy',
+        ],
+      }
     ],
   },
 };

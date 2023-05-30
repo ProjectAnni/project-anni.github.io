@@ -4,8 +4,8 @@ heroImage: https://avatars.githubusercontent.com/u/78713540
 heroText: Project Anni
 tagline: 另一种方案自建音乐服务的方案
 actions:
-  - text: 开始
-    link: https://book.anni.rs/
+  - text: 快速上手
+    link: /guide/intro
     type: secondary
 
 features:
