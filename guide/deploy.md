@@ -23,14 +23,14 @@ services:
     container_name: annil
     image: ghcr.io/projectanni/annil:latest
     ports:
-      - 8081:80/tcp
+      - 8081:80/tcp # 可将 8081 修改为其他端口
     volumes:
       - ./data:/app/data
       - /path/to/audio/library:/library # 将 /path/to/audio/library 修改为音频文件存放目录
     restart: unless-stopped
 ```
 
-运行 `docker-compose up -d` 之后，我们需要修改位于 `config/config.toml` 的 `annil` 的配置文件：
+运行 `docker-compose up -d` 之后，我们需要修改位于 `data/config.toml` 的 `annil` 的配置文件：
 
 ```toml
 [server]
@@ -63,13 +63,13 @@ services:
     container_name: anniv
     image: ghcr.io/projectanni/anniv-go:latest
     ports:
-      - 8080:80/tcp
+      - 8080:80/tcp # 可将 8080 修改为其他端口
     volumes:
       - ./config:/app/config
     environment:
       - CONF=/app/config/config.yml
       - DB_VENDOR=postgres
-      - DB_PATH=postgres://anni:changetoyourdbpasswd@db:5432/anniv
+      - DB_PATH=postgres://anni:changetoyourdbpasswd@db:5432/anniv # 修改数据库密码
     depends_on:
       - db
     restart: unless-stopped
@@ -78,14 +78,14 @@ services:
     image: postgres:14.2
     environment:
       - POSTGRES_USER=anni
-      - POSTGRES_PASSWORD=changetoyourdbpasswd
+      - POSTGRES_PASSWORD=changetoyourdbpasswd # 修改数据库密码
       - POSTGRES_DB=anniv
     volumes:
       - ./db-data:/var/lib/postgresql/data
     restart: unless-stopped
 ```
 
-第一次启动后，我们同样需要修改 `anniv` 的配置文件：
+第一次启动后，我们同样需要修改 `anniv` 的配置文件(`config/config.yml`)：
 
 ```yml
 site_name: Project Anni
