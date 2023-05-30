@@ -17,7 +17,7 @@
 我们推荐通过 Docker 部署 annil 服务，参考的 `docker-compose.yml` 如下：
 
 ```yml
-version: '3'
+version: "3"
 services:
   annil:
     container_name: annil
@@ -26,6 +26,7 @@ services:
       - 8081:80/tcp
     volumes:
       - ./data:/app/data
+      - /path/to/audio/library:/library # 将 /path/to/audio/library 修改为音频文件存放目录
     restart: unless-stopped
 ```
 
@@ -56,7 +57,7 @@ layers = 2
 我们同样推荐使用 Docker 部署 anniv ，参考的 `docker-compose.yml` 如下：
 
 ```yml
-version: '3'
+version: "3"
 services:
   anniv:
     container_name: anniv
@@ -93,7 +94,7 @@ listen: 0.0.0.0:80
 enforce_2fa: false
 headers: {}
 trusted_proxies:
-- 127.0.0.1/32
+  - 127.0.0.1/32
 repo_url: https://github.com/ProjectAnni/repo.git # 修改为自己的元数据仓库地址
 require_invite: true # 注册是否需要邀请码
 invite_code: xxxxxx # 邀请码
