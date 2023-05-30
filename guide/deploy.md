@@ -103,7 +103,7 @@ annil_token:
     name: Default token
     url: https://xxxxxx # 修改为自己 annil 的 URL
     allow_share: true # 是否为这个音频仓库启用分享功能
-    credential: xxxx # 修改为 annil 配置文件中的
+    credential: xxxx # 修改为 annil 配置文件中的 admin-token
 ```
 
 配置文件修改后需要重启 Docker 容器。
