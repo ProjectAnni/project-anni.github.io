@@ -9,7 +9,7 @@ module.exports = {
   theme: "@vuepress/theme-default",
   themeConfig: {
     logo: null,
-    repo: "https://github.com/ProjectAnni",
+    repo: "https://github.com/ProjectAnni/project-anni.github.io",
     navbar: [
       {
         text: "开发文档",
