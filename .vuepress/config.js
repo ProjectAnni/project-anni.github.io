@@ -1,3 +1,5 @@
+import { defaultTheme } from '@vuepress/theme-default'
+
 module.exports = {
   // 站点配置
   lang: "zh-CN",
@@ -5,9 +7,7 @@ module.exports = {
   description:
     "为音频元数据整理、音频仓库分发、音频附加数据管理提供完整的解决方案。",
 
-  // 主题和它的配置
-  theme: "@vuepress/theme-default",
-  themeConfig: {
+  theme: defaultTheme({
     logo: null,
     repo: "https://github.com/ProjectAnni/project-anni.github.io",
     navbar: [
@@ -41,16 +41,17 @@ module.exports = {
         ],
       },
     ],
-    sidebar: [
-      {
-        title: "教程",
-        path: "/guide",
-        children: [
-          'intro',
-          'deploy',
-          'working',
-        ],
-      }
-    ],
-  },
+    sidebar: {
+      "/guide": [
+        {
+          title: "教程",
+          children: [
+            'intro',
+            'deploy',
+            'working',
+          ],
+        }
+      ]
+    },
+  })
 };
