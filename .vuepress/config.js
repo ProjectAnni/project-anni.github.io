@@ -6,7 +6,6 @@ module.exports = {
     "为音频元数据整理、音频仓库分发、音频附加数据管理提供完整的解决方案。",
 
   // 主题和它的配置
-  theme: "@vuepress/theme-default",
   themeConfig: {
     logo: null,
     repo: "https://github.com/ProjectAnni/project-anni.github.io",
